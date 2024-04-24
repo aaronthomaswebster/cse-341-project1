@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "email": "user1@example.com",
+            "username": "user1",
+            "name": "John Doe",
+            "ipAddress": "192.168.0.1"
+        },
+        {
+            "email": "user2@example.com",
+            "username": "user2",
+            "name": "Jane Smith",
+            "ipAddress": "192.168.0.2"
+        },
+        {
+            "email": "user3@example.com",
+            "username": "user3",
+            "name": "Alex Johnson",
+            "ipAddress": "192.168.0.3"
+        }
+    ]
+}
