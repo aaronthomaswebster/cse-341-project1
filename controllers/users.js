@@ -2,7 +2,6 @@ const mongodb = require('../data/database');
 const { ObjectId } = require('mongodb');
 
 const getAll = async (req, res) => {
-    console.log('getAll')
     const result = await mongodb.getDatabase().db().collection('users').find();
     result.toArray().then((users) => {
         res.setHeader('Content-Type', 'application/json');
@@ -11,8 +10,6 @@ const getAll = async (req, res) => {
 }
 
 const getSingle = async (req, res) => {
-    console.log('getSingle')    
-    console.log('id: ', req.params.id)
     const id = req.params.id;
     if (!id) {
       return res.status(400).send({ error: 'User ID is required' });
